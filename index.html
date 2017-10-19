@@ -142,17 +142,17 @@
 	 		<div class="contact-wrap">
 	 			<div class="contact-wrap__left">
 	 				<h6>Оставить заявку</h6>
-	 					<form id="form">
+	 					<form action="mail.php" method="POST" id="form">
 	 						<div class="form-field">
-	 							<input  type="text" name="unname" class="form-control" placeholder="Ваше имя" required >
+	 							<input  type="text" name="user_name" class="form-control" placeholder="Ваше имя" required >
 	 							<span class="form-field__icon"><span class="lnr lnr-user"></span></span>
 	 						</div>
 	 						<div class="form-field">
-	 							<input  type="text" name="phone"  class="form-control" placeholder="Ваш телефон" required >
+	 							<input  type="text" name="user_phone"  class="form-control" placeholder="Ваш телефон" required >
 	 							<span class="form-field__icon"><span class="lnr lnr-phone-handset"></span></span>
 	 						</div>
 	 						<div class="form-field">
-	 							<textarea name="text" class="form-control" placeholder="Что вас интересует?" required></textarea>
+	 							<textarea name="user_text" class="form-control" placeholder="Что вас интересует?" required></textarea>
 	 							<span class="form-field__icon"><span class="lnr lnr-question-circle"></span></span>
 	 						</div>
 	 						<input type="button" class="btn  btn--sm " value="Отправить">
@@ -180,16 +180,6 @@
 	 	</div>
 	 </footer>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script>
-					$('.burger_trigger, .menu').click(function(){
-						  $('.menu').toggleClass('menu_opened');
-						})
-						$(document).click(function(event) {
-						    if ($(event.target).closest(".burger_trigger").length ) return;
-						    $('.menu').removeClass('menu_opened');
-						    event.stopPropagation();
-						});
-	</script>
 	<script src="common.js"></script>
 </body>
 </html>

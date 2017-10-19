@@ -100,7 +100,7 @@ header
 .header-wrap
 	display: flex
 	align-items: center
-	justify-content: center
+	justify-content: space-between
 
 .logo a 
 	display: flex
@@ -110,24 +110,36 @@ header
 	height: 150px
 
 ////////////////////MENU
-.menu 
+.nav 
+	margin: 20px 0
+
+.menu
+	margin: 0
+	padding: 0
+
+.nav li 
+	margin: 0 5px 10px 0
+	padding: 0
 	list-style: none
-	display: flex
+	display: inline-block
+	*display:inline
 
-.menu__item
-	margin-left: 60px
-	position: relative
-.menu__item:last-child:after
-			display: none
 
-.menu__link
+.nav a 
+	padding: 3px 12px
 	font-family: 'RalewayBold', sans-serif
-	font-size: 20px;
-	text-transform: uppercase
-	color: white
 	text-decoration: none
-	&:hover
-		color: $accent
+	font-size: 20px
+	letter-spacing: 1px
+	color: #fff
+	line-height: 100%
+	text-transform: uppercase
+
+.nav a:hover 
+	color: $accent
+
+.nav .current a 
+	display: none
 
 
 ///banner
@@ -282,9 +294,13 @@ section
 
 .pricing-list li:last-child
 	border-bottom: 1px solid #e6e6e6
-	
-.pricing-list li:nth-child(odd)
 	background: #fafafa
+	
+.pricing-list li:first-child
+	background: #fafafa
+	
+
+
 
 .pricing-footer 
 	padding: 34px 28px
@@ -477,6 +493,5 @@ footer
 	align-items: center
 	justify-content: center
 
-
-		///
 @import "media" 
+

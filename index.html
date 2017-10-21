@@ -13,8 +13,6 @@
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 	<link rel="stylesheet" type="text/css" href="css/main.min.css">
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 </head>
 
 <body>
@@ -118,10 +116,33 @@
 	 			<span class="bg-icon">ОТЗЫВЫ</span>
 	 		</div>
 			 		<div class="testimonial">
-			 			<span class="quote__author">Валерий Крупинин</span>
-			 			<p class="testimonial__text">Заказывал уже под ночь 6 человек, не поверил, что грузчики приедут через час, но они действительно приехали вовремя. Эти ребята отгрузили мне 2 фургона напольной плитки за считанные часы. Благодарю компанию Brigada VN за ответственных работников!</p>
-			 			<div class="testimonial__avatar"><img src="img/valera.png"></div>
+			 			<div class="mySlides fade">
+				 			<span class="quote__author">Валерий Крупинин</span>
+				 			<p class="testimonial__text">Вызывал грузчика поднять стройматериал, договорились на тот же день (это плюс), вовремя подъехал, все сделал что требовалось, за оговоренное время. И без матов, как это бывает у многих грузчиков. При необходимости буду еще раз обращаться.</p>
+				 			<div class="testimonial__avatar"><img src="img/valera.png"></div>
+			 			</div>
+			 			<div class="mySlides fade">
+				 			<span class="quote__author">Анна Смолина</span>
+				 			<p class="testimonial__text">Огромное спасибо! Работа по перевозке и поднятию пианино была выполнена на 5+, все четко,аккуратно,слажено, даже не думала, что так бывает. Если вдруг опять нужно будет воспользоваться подобными услугами, то обращаюсь только к Вам!</p>
+				 			<div class="testimonial__avatar"><img src="img/smolina.png"></div>
+			 			</div>
+			 			<div class="mySlides fade">
+				 			<span class="quote__author">Лаврент Марабян</span>
+				 			<p class="testimonial__text">Заказывал уже под ночь 6 человек, не поверил, что грузчики приедут через час, но они действительно приехали вовремя. Эти ребята отгрузили мне 2 фургона напольной плитки за считанные часы. Благодарю компанию Brigada VN за ответственных работников!</p>
+				 			<div class="testimonial__avatar"><img src="img/lavrik.png"></div>
+			 			</div>
+			 			<div class="curs">
+			 			<a onclick="plusSlides(-1)" class="prev">&#10094</a>
+						<a onclick="plusSlides(1)" class="next">&#10095</a>
+						</div>
+
 			 		</div>
+			 		<br>
+						<div style="text-align:center;">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						</div>
 	 	</div>
 	 </section>
 	 <section class="job" id="job">
@@ -144,6 +165,9 @@
 	 			<div class="contact-wrap__left">
 	 				<h6>Оставить заявку</h6>
 	 					<form action="mail.php" method="POST" id="form">
+	 						<input type="hidden" name="project_name" value="Название сайта">
+	 						<input type="hidden" name="admin_email" value="brigadavn@gmail.com">
+	 						<input type="hidden" name="form_subject" value="Заявка с формы">
 	 						<div class="form-field">
 	 							<input  type="text" name="name" class="form-control" placeholder="Ваше имя" required >
 	 							<span class="form-field__icon"><span class="lnr lnr-user"></span></span>
@@ -153,7 +177,7 @@
 	 							<span class="form-field__icon"><span class="lnr lnr-phone-handset"></span></span>
 	 						</div>
 	 						<div class="form-field">
-	 							<textarea name="message" class="form-control" placeholder="Что вас интересует?" required></textarea>
+	 							<textarea name="mess" class="form-control" placeholder="Что вас интересует?" required></textarea>
 	 							<span class="form-field__icon"><span class="lnr lnr-question-circle"></span></span>
 	 						</div>
 	 						<input type="button" class="btn  btn--sm " value="Отправить">
@@ -180,7 +204,7 @@
 	 		</div>
 	 	</div>
 	 </footer>
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="common.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,198 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px)
+	h1
+		font-size: 50px
+		margin-top: -50px
+	.nav a
+		font-size: 15px
+	.btn
+		height: 50px
+		font-size: 14px
+	.job__footer
+		text-align: center
+	.testimonial
+		margin-top: 70px
+	.testimonial__avatar 
+		width: 200px
+		height: 200px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 867px)
+	.header-wrap
+		display: flex
+		justify-content: space-between
+	.nav 
+		margin: top
+		position: relative
+		min-height: 40px
+		margin-right: 200px
+	.menu
+		width: 180px
+		padding: 10px 0
+		position: absolute
+		top: 0
+		left: 0
+		background-color: none
+		border:	2px solid #fff
+		border-radius: 50px
+		box-shadow: 0 1px 2px rgba(0,0,0,.3)
+	.nav li 
+		display: none /* скрыть все <li> пункты */
+		margin: 0 auto
+	
+	.nav .current 
+		display: block /* показывать только текущие активные <li> пункты */
+	
+	.nav a 
+		display: block
+		text-align: center
+	
+	.nav li:nth-child(2n)
+		border-top:	2px solid #fff
+	.nav li:nth-child(2n+1)
+		border-top:	2px solid #fff
+	.nav li:first-child
+		border-top:	none
+
+	.nav .current a 
+		display: block
+		background: none
+		color: #fff
+	.nav a:hover
+		color: $accent
+ 
+	/* при наведении на пункты меню */
+	.nav ul:hover 
+		background-image: none
+	
+	.nav ul:hover li
+		display: block
+		margin: 0 0 5px
+	
+	h1
+		font-size: 45px
+	.testimonial__text
+		font-size: 15px
+	.goods-list
+		flex-direction: column
+	.box-pricing
+		flex-direction: column
+	.service-list__item 
+		text-align: center
+	.service-list__icon
+		margin: 0 auto
+	.pricing
+		padding-top: 40px
+		justify-content: center
+
+@media only screen and (max-width : 600px)
+	.nav 
+		margin-right: 180px
+	.logo
+		display: none
+	.header-wrap
+		display: flex
+		justify-content: center
+		padding-top: 30px
+	h1
+		font-size: 40px
+		margin-bottom: 40px
+		margin-top: -50px
+	.job__text
+		flex-direction: column
+		text-align: center
+	.job__text h2
+		text-align: center
+		margin: 0 25px
+		padding-bottom: 20px
+		position: relative
+	.job__text h2:after
+			width: 200px
+			height: 8px
+			background-color: $accent
+			position: absolute
+			left: 7%
+			top: 100% 
+			margin-top: 7px 
+	.testimonial
+		margin-top: 60px
+	.lg
+		font-size: 30px
+		margin-bottom: 20px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 450px)
+	.lg
+		font-size: 25px
+	.pricing
+		flex-direction: column
+	.contact-wrap
+		flex-direction: column
+		width: 100%
+	.contact-wrap__left
+		width: 100%
+	.contact-wrap__right
+		width: 100%
+		padding: 0
+	.pricing
+		margin-left: 15%
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px)
+	h1
+		font-size: 30px
+	.lg
+		font-size: 20px
+	.heading
+		flex-direction: column
+		h2
+			margin-right: 115px
+		h2:after
+			width: 50px
+			height: 7px
+			top: 200%
+			left: 60%
+	.testimonial
+		margin-top: 50px
+	.about p
+		text-align: center
+	.testimonial__avatar 
+		width: 150px
+		height: 150px
+	.pricing
+		margin-left: 0%
+	.bg
+		height: 750px
+	.banner
+		height: 750px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

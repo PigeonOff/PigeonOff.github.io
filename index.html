@@ -164,23 +164,20 @@
 	 		<div class="contact-wrap">
 	 			<div class="contact-wrap__left">
 	 				<h6>Оставить заявку</h6>
-	 					<form action="mail.php" method="POST" id="form">
-	 						<input type="hidden" name="project_name" value="Название сайта">
-	 						<input type="hidden" name="admin_email" value="brigadavn@gmail.com">
-	 						<input type="hidden" name="form_subject" value="Заявка с формы">
+	 					<form action="telegram.php" method="POST">
 	 						<div class="form-field">
-	 							<input  type="text" name="name" class="form-control" placeholder="Ваше имя" required >
+	 							<input  type="text" class="form-control" name="user_name"  placeholder="Ваше имя">
 	 							<span class="form-field__icon"><span class="lnr lnr-user"></span></span>
 	 						</div>
 	 						<div class="form-field">
-	 							<input  type="text" name="phone"  class="form-control" placeholder="Ваш телефон" required >
+	 							<input  type="text" class="form-control" name="user_phone"   placeholder="Ваш телефон">
 	 							<span class="form-field__icon"><span class="lnr lnr-phone-handset"></span></span>
 	 						</div>
 	 						<div class="form-field">
-	 							<textarea name="mess" class="form-control" placeholder="Что вас интересует?" required></textarea>
+	 							<textarea  class="form-control" name="user_text" placeholder="Что вас интересует?"></textarea>
 	 							<span class="form-field__icon"><span class="lnr lnr-question-circle"></span></span>
 	 						</div>
-	 						<input type="button" class="btn  btn--sm " value="Отправить">
+	 						<button type="submit" class="btn  btn--sm">Отправить</button>
 	 					</form>
 	 			</div>
 	 			<div class="contact-wrap__right">

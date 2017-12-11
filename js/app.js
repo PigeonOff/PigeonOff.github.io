@@ -400,7 +400,7 @@ function initializeMap() {
     });
 
     var infowindow = new google.maps.InfoWindow({
-        content: "Your content goes here!"
+        content: "Мы располагаемся здесь"
     });
 
     google.maps.event.addListener(marker, 'click', function () {

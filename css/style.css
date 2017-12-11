@@ -72,7 +72,7 @@ p {
     box-shadow: none;
 }
 .navbar .brand img {
-    width:120px;
+    width:150px;
     height:40px;
 }
 .navbar .nav > li > a {
@@ -116,6 +116,7 @@ p {
     border-radius:0;
     background:#FECE1A;
     color: #000;
+    margin-top: 10px;
 }
 /******
 2. Layout
@@ -386,7 +387,7 @@ p {
 /* Third section use bacground image */
 .third-section {
     padding-bottom: 70px;
-    background: #181A1C url(../images/brand-bg.png) no-repeat center;
+    background: #181A1C url(../images/fon.png);
     border-top:6px solid #FECE1A;
 }
 .third-section .container {
@@ -513,40 +514,12 @@ p {
 /*********************************************************************
                         SKILLS BAR
 *********************************************************************/
- .skills {
-    list-style-type: none;
-    position: relative;
-    margin:0px;
-}
-.skills li {
-    margin-bottom:30px;
-    background:#FFF;
-    height:40px;
-    padding:1px;
-}
-.skills li h3 {
-    position: relative;
-    font-size: 15px;
-    padding:0;
-    margin:0;
-    left: 10px;
-    z-index: 1;
-    color: #181A1C;
-}
-.skills li .bar {
-    height:40px;
-    position:absolute;
-    background-color: #FECE1A;
-}
+
 /*
 3.4 Clients
 **********************************************************************/
- .client-slider img {
-    border:1px solid white;
-}
-.client-slider img:hover {
-    background-color:#FECE1A;
-}
+
+
 .client-nav {
     list-style:none;
     margin-top:10px;
@@ -608,33 +581,44 @@ p {
     width:70%;
     line-height:1.3em;
 }
-/*
 
+
+
+/*
 /*
 3.6 Newsletter
 ********************************************************************/
- .newsletter, .newsletter h2 {
-    color: #D7DDDE;
+.newsletter, .newsletter h3 {
+    font-size: 40px;
+    color: #181A1C
+
 }
-.newsletter .title h2 {
+.newsletter .title h3 {
     text-align:left;
     padding:0;
     margin:0;
 }
+.newsletter p {
+    margin-top: -10px;
+    line-height: 23px;
+    font-size: 17px;
+    color: #181A1C;
+}
 .newsletter form {
     text-align:right;
 }
-.newsletter input {
-    margin-top:10px;
+.newsletter textarea {
     padding:15px;
     height: auto;
 }
 .newsletter button {
     margin: 0 0 0 20px;
+    background: none;
+    border: 1px solid #000000;
 }
 .newsletter .button-sp:hover, .newsletter .button-sp:active {
-    background-color:#FFF;
-    color:#181A1C;
+    background-color: #181A1C;
+    color:#ffffff;
 }
 
 /*

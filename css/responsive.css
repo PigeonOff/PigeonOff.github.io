@@ -104,3 +104,9 @@
 	.portfolioContainer{ width:280px !important; margin:0 auto !important }
 
 }
+
+@media only screen and (max-width: 320px) {
+	/****Mobile Portrait 320 ****/
+	body {
+		width: 320px;
+	}
